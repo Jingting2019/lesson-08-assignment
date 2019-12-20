@@ -2,6 +2,14 @@
   box-sizing: border-box;
   margin: auto;
 }
+.hidden {
+  position: relative;
+  left: -1000px;
+  top: auto;
+}
+.hidden:focus {
+  left: 0;
+}
 li {
   list-style: none;
 }
@@ -12,7 +20,7 @@ a:link {
 header div {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #03a3df;
+  background-color: #037EAA;
   display: grid;
   grid-template-rows: auto auto auto auto;
   grid-template-columns: 20% 20% 20% 20% 20%;
@@ -70,7 +78,7 @@ header nav ul li {
 }
 header nav ul li:not(:last-child)::after {
   content: '/';
-  padding: 0.5rem;
+  padding: 0.9rem;
 }
 header a {
   color: white;
